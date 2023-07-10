@@ -1,11 +1,8 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import BaseLayout from "@/layouts/BaseLayout";
+import styles from "@/styles/m/Home.module.css";
+import BaseLayout from "@/layouts/m/BaseLayout";
 
-const inter = Inter({ subsets: ["latin"] });
-
-const HomePage = () => {
+const HomePage_M = () => {
   return (
     <>
       <Head>
@@ -16,11 +13,11 @@ const HomePage = () => {
       </Head>
       <BaseLayout>
         <main className={`${styles.container}`}>
-          <div className={`${styles.wrapper}`}></div>
-          <div className={`${styles.hill}`}></div>
+          <div className={`${styles.wrapper}`}>12adsfadsfadsf3</div>
+          <div className={`${styles.hill}`}>345</div>
         </main>
       </BaseLayout>
     </>
   );
 };
-export default HomePage;
+export default HomePage_M;
