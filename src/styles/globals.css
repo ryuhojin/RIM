@@ -4,5 +4,10 @@ body,
   width: 100%;
   margin: 0;
   padding: 0;
-  background: rgba(20, 20, 20, 1);
+  background: #fff;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
 }

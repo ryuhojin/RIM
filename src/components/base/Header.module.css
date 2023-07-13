@@ -1,6 +1,26 @@
 .container {
-  background: #070d1e;
   height: 80px;
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  transition: all 0.2s;
+}
+
+.container_transparent {
+  background: transparent;
+  border-bottom: 0px solid rgba(0, 27, 55, 0.1);
+}
+
+.container_border {
+  background: white;
+  border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
 }
