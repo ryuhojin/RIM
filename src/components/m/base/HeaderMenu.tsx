@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { forwardRef, ReactNode } from "react";
 import styles from "./Header.module.css";
+import { MdMenu, MdClose } from "react-icons/md";
 
 interface HeaderMenuListProps {
   children: ReactNode;
@@ -32,6 +33,23 @@ const HeaderMenuItem = ({ href, title }: HeaderMenuItemProps) => {
   );
 };
 
+interface HeaderMenuBtnProps {
+  isMenuOpen: boolean;
+  toggleMenu: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+}
+
+const HeaderMenuBtn = ({ isMenuOpen, toggleMenu }: HeaderMenuBtnProps) => (
+  <button
+    className={`${styles["btn"]} ${styles["btn--reset"]}`}
+    onClick={toggleMenu}
+  >
+    <span className={styles["btn__icon"]}>
+      {!isMenuOpen ? <MdMenu /> : <MdClose />}
+    </span>
+  </button>
+);
+
 export const HeaderMenu = Object.assign(HeaderMenuList, {
   Item: HeaderMenuItem,
+  Btn: HeaderMenuBtn,
 });

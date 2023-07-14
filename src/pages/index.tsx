@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import BaseLayout from "@/layouts/BaseLayout";
+import StarryNight from "@/components/background/StarryNight";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +17,10 @@ const HomePage = () => {
       </Head>
       <BaseLayout>
         <main className={`${styles.container}`}>
-          <div className={`${styles.wrapper}`}></div>
-          <div className={`${styles.hill}`}></div>
+          <div style={{ height: "100vh", width: "100%", background: "salmon" }}>
+          </div>
+          <div style={{ height: "100vh", width: "100%", background: "green" }}>
+          </div>
         </main>
       </BaseLayout>
     </>
