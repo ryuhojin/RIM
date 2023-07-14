@@ -1,4 +1,6 @@
 import Header from "@/components/base/Header";
+import styles from "./BaseLayout.module.css";
+
 interface BaseLayoutProps {
   children: React.ReactNode;
 }
@@ -6,7 +8,7 @@ const BaseLayout = ({ children }: BaseLayoutProps) => {
   return (
     <>
       <Header />
-      {children}
+      <main className={`${styles["container"]}`}>{children}</main>
     </>
   );
 };

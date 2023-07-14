@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import BaseLayout from "@/layouts/BaseLayout";
 import StarryNight from "@/components/background/StarryNight";
 
@@ -16,11 +15,10 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <BaseLayout>
-        <main className={`${styles.container}`}>
-         <StarryNight/>
-          <div style={{ height: "100vh", width: "100%", background: "green" }}>
-          </div>
-        </main>
+        <StarryNight />
+        <div
+          style={{ height: "100vh", width: "100%", background: "green" }}
+        ></div>
       </BaseLayout>
     </>
   );
