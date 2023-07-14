@@ -17,8 +17,7 @@ const HomePage = () => {
       </Head>
       <BaseLayout>
         <main className={`${styles.container}`}>
-          <div style={{ height: "100vh", width: "100%", background: "salmon" }}>
-          </div>
+         <StarryNight/>
           <div style={{ height: "100vh", width: "100%", background: "green" }}>
           </div>
         </main>
